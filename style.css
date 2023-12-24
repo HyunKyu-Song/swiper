@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 body {
@@ -57,16 +58,25 @@ body {
 } */
 
 
-.bgm{
+.ending-btn{
+  width: 180px;
   cursor: pointer;
   background-color: #303030a4;
   padding: 7px 13px;
   border-radius: 20px;
   position: absolute;
-  left: calc(100% - 66px);
+  left: calc(100% - 200px);
   top: 10px;
   border: none;
   z-index: 20;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.ending-btn:hover{
+  color: azure;
+  background-color: #000000d7;
 }
 
 .tom{
@@ -104,3 +114,5 @@ body {
   margin: auto;
   opacity: 0;
 }
+
+

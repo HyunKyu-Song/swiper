@@ -15,28 +15,36 @@ const swiper = new Swiper(".mySwiper", {
 
 
 const audio = new Audio('./assets/audio/ending_bgm.wav');
+const body = document.querySelector('body');
 const crash = document.querySelector('.crash');
 const tom = document.querySelector('.tom');
 const jerry = document.querySelector('.jerry');
+const endingBtn = document.querySelector('.ending-btn');
 const ending = document.querySelector('.ending');
+const next = document.querySelector('.swiper-button-next');
 
 
-crash.addEventListener('click', function () {
+let cnt = 0;
+next.addEventListener('click', function (e) {
 
-   tom.src = './assets/img/crash.png';
+   cnt += 1;
+   if (cnt === 6) {
+      tom.src = './assets/img/crash.png';
 
-   setTimeout(() => {
-      tom.src = './assets/img/tom2.gif'
-   }, 2000);
+      setTimeout(() => {
+         tom.src = './assets/img/tom2.gif'
+      }, 1500);
 
-   setTimeout(() => {
-      tom.src = './assets/img/tom.gif';
-   }, 10000)
+      setTimeout(() => {
+         tom.src = './assets/img/tom.gif';
+      }, 5000)
+   }
 })
 
 
-document.querySelector('.bgm').addEventListener('click', function () {
+endingBtn.addEventListener('click', function () {
 
+   endingBtn.style.display = 'none';
    tom.src = ''
 
    setTimeout(() => {
@@ -55,7 +63,7 @@ document.querySelector('.bgm').addEventListener('click', function () {
    setTimeout(() => {
       ending.style.opacity = 1;
       ending.style.zIndex = 50;
-      document.querySelector('body').style.filter = 'grayscale(100%)'
+      body.style.filter = 'grayscale(100%)'
    }, 4000);
 
    setTimeout(() => {
