@@ -1,7 +1,7 @@
 html,
 body {
   height: 100%;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Roboto';
 }
 
 body {
@@ -21,7 +21,6 @@ body {
   display: flex;
 }
 
-
 .swiper {
   width: 100%;
   height: 300px;
@@ -30,58 +29,45 @@ body {
   top: 50%;
 }
 
-/* .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #1C1A19;
-  background: #DFDDDF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .swiper-slide img {
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  background-color: #DFDDDF;
+  /* background-color: #DFDDDF; */
+  background-color: #1C1A19;
   object-fit: contain;
-  filter: grayscale(15%) sepia(31%) brightness(84%);
+  /* filter: grayscale(15%) sepia(31%) brightness(84%);
 -webkit-filter: grayscale(15%) sepia(31%) brightness(84%);
--moz-filter: grayscale(15%) sepia(31%) brightness(84%);
-
+-moz-filter: grayscale(15%) sepia(31%) brightness(84%); */
 }
 
-/* .swiper {
-  margin-left: auto;
-  margin-right: auto;
-} */
-
-
 .ending-btn{
-  width: 180px;
+  width: 130px;
   cursor: pointer;
-  background-color: #303030a4;
+  background-color: #dddadaad;
+  color: #000;
   padding: 7px 13px;
   border-radius: 20px;
   position: absolute;
-  left: calc(100% - 200px);
+  left: calc(100% - 150px);
   top: 10px;
   border: none;
   z-index: 20;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Roboto';
   font-weight: bold;
   font-size: 15px;
 }
 
 .ending-btn:hover{
-  color: azure;
-  background-color: #000000d7;
+  color: rgba(240, 255, 255, 0.76);
+  background-color: #747474;
 }
 
 .tom{
   position: absolute;
+  height: 310px;
   top: 50%;
+  left: 15%;
   z-index: 10;
   transform: translateY(-50%);
   filter: grayscale(15%) sepia(31%) brightness(84%);
@@ -89,24 +75,19 @@ body {
 -moz-filter: grayscale(15%) sepia(31%) brightness(84%);
 }
 
-
 .crash{
   cursor: pointer;
   z-index: 30;
   position: absolute;
 }
 
-
 .box{
-  width: 150px;
-  height: 500px;
-  margin-right: 500px;
+  width: 650px;
+  visibility: hidden;
 }
-
 
 .ending{
   position: absolute;
-  /* z-index: 50; */
   top: 50%;
   bottom: 0;
   left: 0;
@@ -115,4 +96,16 @@ body {
   opacity: 0;
 }
 
+.reload{
+  cursor: pointer;
+  transition: all 0.5s;
+}
 
+.reload:hover{
+  transform: scale(1.05);
+}
+
+.swiper-button-next{
+  background-color: transparent;
+  border: none;
+}

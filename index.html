@@ -4,75 +4,84 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Swiper</title>
+   <title>Tom and Jerry</title>
+
+   <link rel="icon" href="./assets/favicon/favicon.ico">
    <link rel="stylesheet" href="./style.css">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet">
 
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
+
    <div class="swiper-container">
-      <img src="./assets/img/tom.gif" class="tom" alt="">
-      <img src="./assets/img/ending.png" class="ending" alt="">
-      <div class="box"></div>
+
+      <img src="./assets/img/tom.gif" class="tom" alt="톰이 뛰어가는 모습">
+      <img src="./assets/img/ending.png" class="ending" alt="카페베네 로고">
+      <div class="box" role="none"></div>
+
       <div class="swiper mySwiper">
          <div class="swiper-wrapper">
-            <div class="swiper-slide"></div>
+
+            <div class="swiper-slide" role="none"></div>
+
             <div class="swiper-slide">
-               <img src="./assets/img/jerry1.png" alt="">
+               <img src="./assets/img/jerry1.png" alt="여유롭게 걷는 제리">
             </div>
+
             <div class="swiper-slide">
-               <img src="./assets/img/jerry2.png" alt="">
+               <img src="./assets/img/jerry2.png" alt="놀라는 제리">
             </div>
+
             <div class="swiper-slide">
-               <img src="./assets/img/jerry3.png" alt="">
+               <img src="./assets/img/jerry3.png" alt="도망가는 제리">
             </div>
+
             <div class="swiper-slide">
-               <img src="./assets/img/jerry4.png" alt="">
+               <img src="./assets/img/jerry4.png" alt="도망가는 제리">
             </div>
-            <!-- <div class="swiper-slide">
-               <img src="./assets/img/jerry3.png" alt="">
-            </div>
+
             <div class="swiper-slide">
-               <img src="./assets/img/jerry4.png" alt="">
-            </div> -->
-            <div class="swiper-slide" data-crash="crash">
-               <!-- <button class="crash">crash</button> -->
-               <img src="./assets/img/장애물1.png" alt="">
+               <img src="./assets/img/장애물1.png" alt="장애물">
             </div>
+
             <div class="swiper-slide">
-               <img src="./assets/img/넘어짐1.png" alt="">
+               <img src="./assets/img/넘어짐1.png" alt="넘어진 제리">
             </div>
+
             <div class="swiper-slide">
-               <img src="./assets/img/넘어짐2.png" alt="">
+               <img src="./assets/img/넘어짐2.png" alt="넘어진 채로 뒤돌아보는 제리">
             </div>
+
             <div class="swiper-slide">
-               <img src="./assets/img/jerry3.png" alt="">
+               <img src="./assets/img/jerry3.png" alt="도망가는 제리">
             </div>
+
             <div class="swiper-slide">
-               <img src="./assets/img/jerry4.png" alt="">
+               <img src="./assets/img/jerry4.png" alt="도망가는 제리">
             </div>
+
             <div class="swiper-slide">
-               <img src="./assets/img/jerry3.png" alt="">
+               <img src="./assets/img/jerry3.png" alt="도망가는 제리">
             </div>
-            <!-- <div class="swiper-slide">
-               <img src="./assets/img/jerry4.png" alt="">
-            </div> -->
+
             <div class="swiper-slide">
-               <button class="ending-btn">Ending🔊</button>
-               <img src="./assets/img/넘어짐1.png" class="jerry" alt="">
+               <button type="button" class="ending-btn">Ending🔊</button>
+               <img src="./assets/img/넘어짐1.png" class="jerry" alt="넘어진 제리">
             </div>
+
          </div>
       </div>
-      <div class="swiper-button-next"></div>
+
+      <button type="button" class="swiper-button-next"></button>
       <!-- <div class="swiper-button-prev"></div> -->
-      <div class="swiper-pagination"></div>
+      <!-- <div class="swiper-pagination"></div> -->
    </div>
 
    <script src="./main.js" defer></script>
